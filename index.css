@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    font-family: "Arial Black", Gadget, sans-serif
+  }
+  body{
+    background: white;
+    background: -webkit-linear-gradient(to right, blue, blueviolet, purple);
+    background: linear-gradient(to right, blue, blueviolet, purple);
+  }
+  #main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 0 10%;
+  }
+  #heading{
+    display: grid;
+    place-items: center;
+    background-color: rgb(38, 38, 197);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  h1, h3, h5{
+    margin: 5px;
+    text-shadow: 3px 3px 3px rgb(235, 147, 243);
+    color: rgba(197, 196, 196, 0.75);
+  }
+  #chatbox{
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    overflow-y: scroll;
+  }
+  .chuckimg{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.star2.com%2Fwp-content%2Fuploads%2F2015%2F04%2F5517CD8BD8DD42D9AA86B6BC8BF25CA5.jpg&f=1&nofb=1') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: red;
+  }
+  .message{
+    background-color: white;
+    opacity: 75%;
+    display: grid;
+    grid-template-columns: 1fr 65px 10fr 1fr;
+    grid-gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .message:hover{
+    background-color: lightgray;
+  }
+  input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+  button{
+    color: #3354e6;
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .sender{
+    color: blue;
+  }
+  .delete{
+    cursor: pointer;
+    justify-self: center;
+    color: red;
+  }
+  /* shake animation */
+  .shakeMe{
+    border-radius: 6px;
+    border: 0px;
+  }
+  .shakeMe:hover{
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -1px) rotate(-1deg); }
+    20% { transform: translate(-1px, 1px) rotate(1deg); }
+    30% { transform: translate(1px, 1px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 1px) rotate(-1deg); }
+    60% { transform: translate(-1px, 1px) rotate(0deg); }
+    70% { transform: translate(1px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -1px) rotate(-1deg); }
+  }
