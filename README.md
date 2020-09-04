@@ -1,3 +1,7 @@
+## The Loneliest Chatroom
+
+## Features
+
 * Typing a message into the text input and hitting enter creates a message in the chatbox.
 * The text box clears out when enter is pressed to make room for the next message.
 * The message always is from either "Me", "Myself", or "I".
